@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.saju.mapper.UserMapper">
+
+    <resultMap id="UserResultMap" type="com.saju.domain.User">
+        <id property="id" column="id"/>
+        <result property="provider" column="provider"/>
+        <result property="userId" column="user_id"/>
+        <result property="nickname" column="nickname"/>
+    </resultMap>
+
+    <select id="findByProviderAndUserId" resultMap="UserResultMap">
+        SELECT * FROM users 
+        WHERE provider = #{provider} AND user_id = #{userId}
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO users (provider, user_id, nickname)
+        VALUES (#{provider}, #{userId}, #{nickname})
+    </insert>
+
+    <update id="update">
+        UPDATE users
+        SET nickname = #{nickname}
+        WHERE id = #{id}
+    </update>
+
+</mapper>
