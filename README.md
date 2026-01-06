@@ -19,19 +19,19 @@ Vue3 + Spring Boot 기반의
 - 프로젝트 초기 세팅 프레임
 
 1. 카카오 API 키 설정
--Frontend
--App.vue 또는 환경 변수에 Kakao JavaScript Key 설정
+- Frontend
+- App.vue 또는 환경 변수에 Kakao JavaScript Key 설정
 
--Backend
--application.yml에서 Kakao rest api 키 설정
+- Backend
+- application.yml에서 Kakao rest api 키 설정
 
 2. db 정보 변경
 
 3. 프로젝트명 변경
 
--패키지명
--application name
--프론트 프로젝트명
+- 패키지명
+- application name
+- 프론트 프로젝트명
 
 각 프로젝트 목적에 맞게 변경 후 사용하세요.
 
