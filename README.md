@@ -19,19 +19,19 @@ Vue3 + Spring Boot 기반의
 - 프로젝트 초기 세팅 프레임
 
 1. 카카오 API 키 설정
-Frontend
-App.vue 또는 환경 변수에 Kakao JavaScript Key 설정
+-Frontend
+-App.vue 또는 환경 변수에 Kakao JavaScript Key 설정
 
-Backend
-application.yml에서 Kakao rest api 키 설정
+-Backend
+-application.yml에서 Kakao rest api 키 설정
 
 2. db 정보 변경
 
 3. 프로젝트명 변경
 
-패키지명
-application name
-프론트 프로젝트명
+-패키지명
+-application name
+-프론트 프로젝트명
 
 각 프로젝트 목적에 맞게 변경 후 사용하세요.
 
@@ -42,10 +42,10 @@ application name
 
 운영 배포 시:
 
-JWT / 세션 처리 => JWT를 프론트에서 받기만하고 저장안함 => 쿠키 저장 권장
-카카오 Redirect URI => 운영 배포시 도메인에 맞는 url
-CORS 설정 => 운영에서 필수
-토큰 만료 후 처리 => 프론트 처리
+- JWT / 세션 처리 => JWT를 프론트에서 받기만하고 저장안함 => 쿠키 저장 권장
+- 카카오 Redirect URI => 운영 배포시 도메인에 맞는 url
+- CORS 설정 => 운영에서 필수
+- 토큰 만료 후 처리 => 프론트 처리
 
 를 반드시 추가하세요.
 
